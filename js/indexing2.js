@@ -4,7 +4,7 @@ const canvis = document.querySelectorAll('.canvis');
 const text1 = document.querySelector('#offcanvasScrollingLabel')
 const but = document.querySelector('button');
 const h3 = document.querySelector('h3');
-const drop1 = document.querySelector('.dropdown-menu')
+const drop1 = document.querySelector('.dropdown-menu');
 const p = document.querySelectorAll('p');
 
 
@@ -36,19 +36,4 @@ chk.addEventListener('change', () => {
     p[5].classList.toggle('lighttext');
     p[6].classList.toggle('darktext');
     p[6].classList.toggle('lighttext');
-    p[7].classList.toggle('darktext');
-    p[7].classList.toggle('lighttext');
-    p[7].classList.toggle('darktext');
-    p[8].classList.toggle('lighttext');
-    p[8].classList.toggle('darktext');
-    p[9].classList.toggle('lighttext');
-    p[9].classList.toggle('darktext');
-    p[10].classList.toggle('lighttext');
-    p[10].classList.toggle('darktext');
-    p[11].classList.toggle('lighttext');
-    p[11].classList.toggle('darktext');
-    p[12].classList.toggle('lighttext');
-    p[12].classList.toggle('darktext');
-    p[13].classList.toggle('lighttext');
-    p[13].classList.toggle('darktext');
 });

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprende CSS3</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="shortcut icon" href="../img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../bootstrap-5.0.0-beta3-dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-lg fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><i class="fab fa-css3-alt blue"></i>APRENDE <span
+                    class="blue">CSS3</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../index.html">INICIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">¿Por qué CSS?</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            GUÍAS
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="primeros_pasos.html">Primeros Pasos</a></li>
+                            <li><a class="dropdown-item active" href="colores_y_backgrounds.html">Colores y backgrounds</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Proximamente...</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+                <input type="checkbox" class="checkbox" id="chk" />
+                <label class="label" for="chk">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                    <div class="ball"></div>
+                </label>
+            </div>
+        </div>
+    </nav>
+    <section style="margin-top: 56px">
+        <button class="btn btn-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><i class="fas fa-bars"></i></button>
+        <h3  style="margin-top:-34px;" class="text-center">Colores y Backgrounds en <span class="blue">CSS3</span></h3>
+        <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+            id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+            <div class="canvis offcanvas-header bg-light">
+                <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Navegador de Guías</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+            <div class="canvis offcanvas-body bg-light">
+                <p>Aquí encontrarás las diferentes guías que se vayan haciendo..</p>
+                <ul>
+                    <li><a href="primeros_pasos.html">Primeros Pasos</a></li>
+                    <li><a href="#">Colores y Backgrounds</a></li>
+                    <li>Proximamente...</li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <p class="darktext fs-3">Aplicando colores: </p>
+        <p class="darktext fs-4">Bien, continuando con nuestra guía, ahora trataremos los colores en <span class="blue">CSS3</span>, primero, hay que definir bien qué es la propiedad de 'color'.
+        En <span class="blue">CSS3</span> tenemos la propiedad .color como la que se encarga de dar colores a nuestras letras, se declara poniendo dentro de nuestra clase/id css el estilo color, seguido de dos puntos, el código del color que vamos a utilizar y punto y coma. Tal que así:</p>
+        <div class="codemg d-inline-flex" style="width:100%;">
+            <img src="../img/colorsyback/colors.PNG" alt="" class="img-fluid">
+        </div>
+        <p class="darktext fs-4">Dandonos de resultado esa clase blue algo así: <span class="blue">Hola, soy el resultado del color: #22B8CF;</span>. <span class="red">IMPORTANTE: </span> En tal caso de <span class="red">No saber qué colores hay disponibles en CSS3 o cómo obtener un color en especifico </span> te damos una lista de herramientas para poder facilitar esta tarea:</p>
+        <ul>
+            <li class="ulist daktext fs-4"><a href="https://www.w3schools.com/cssref/css_colors.asp">W3schools</a></li>
+            <li class="ulist daktext fs-4"><a href="https://picpick.app/en/">Pick Pick</a></li>
+            <li class="ulist daktext fs-4"><a href="https://htmlcolorcodes.com/es/">HTMLColorcodes</a></li>
+        </ul>
+    </div>
+    <p class="darktext fs-3">Aplicando backgrounds: </p>
+    <p class="darktext fs-4">Bien, continuando con nuestra guía, ahora trataremos los backgrounds en <span class="blue">CSS3</span>, primero, hay que definir bien qué es la propiedad de 'background'
+    En <span class="blue">CSS3</span> tenemos la propiedad .background como la que se encarga de dar fondos a nuestros elementos, pueden ser imagenes y colores, se declara igual que la propiedad color en caso de ser color, y en caso de ser imagen se declara en el contenido del estilo url(dirección de la imagen). Tal que así: </p>
+    <div class="codemg d-inline-flex" style="width:100%;">
+        <img src="../img/colorsyback/backs.PNG" alt="" class="img-fluid">
+    </div>
+    <p class="darktext fs-4">Dandonos algo así como resultado: </p>
+    <div class="div123 d-inline-flex">
+        <h3>Soy el resultado!</h3>
+        <br>
+        <br>
+        <br>
+    </div>
+    </section>
+    <footer class="bg-light text-center text-lg-start">
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2020 Copyright:
+            <span class="text-dark">David Casallas</span>
+        </div>
+    </footer>
+    <script src="../js/indexing2.js"></script>
+    <script src="../bootstrap-5.0.0-beta3-dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
